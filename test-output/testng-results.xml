@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26243" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:49:05Z">
+    <groups>
+    </groups>
+    <test name="App Test" duration-ms="8" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:48:39Z">
+    </test> <!-- App Test -->
+    <test name="Validating Title in the page" duration-ms="12363" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:48:51Z">
+      <class name="MavenProject.ValidateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MavenProject.ValidateTitle@638ef7ed]" name="initialize" is-config="true" duration-ms="7605" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="textValidation()[pri:0, instance:MavenProject.ValidateTitle@638ef7ed]" name="textValidation" duration-ms="53" started-at="2020-10-25T09:48:47Z" finished-at="2020-10-25T09:48:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Gmail1] but found [Gmail]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Gmail1] but found [Gmail]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at MavenProject.ValidateTitle.textValidation(ValidateTitle.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textValidation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:MavenProject.ValidateTitle@638ef7ed]" name="teardown" is-config="true" duration-ms="4324" started-at="2020-10-25T09:48:47Z" finished-at="2020-10-25T09:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- MavenProject.ValidateTitle -->
+    </test> <!-- Validating Title in the page -->
+    <test name="Validating user logIn" duration-ms="26242" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:49:05Z">
+      <class name="MavenProject.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:MavenProject.HomePage@64ec96c6]" name="initialize" is-config="true" duration-ms="4568" started-at="2020-10-25T09:48:39Z" finished-at="2020-10-25T09:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:MavenProject.HomePage@64ec96c6]" name="basePageNavigation" duration-ms="17538" started-at="2020-10-25T09:48:43Z" data-provider="getdata" finished-at="2020-10-25T09:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[facebook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:MavenProject.HomePage@64ec96c6]" name="teardown" is-config="true" duration-ms="4108" started-at="2020-10-25T09:49:01Z" finished-at="2020-10-25T09:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- MavenProject.HomePage -->
+    </test> <!-- Validating user logIn -->
+  </suite> <!-- Suite -->
+</testng-results>

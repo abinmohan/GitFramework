@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<!-- <suite name="Suite"> -->	<listeners>
+		<listener class-name="MavenProject.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Validating Title in the page">
+		<classes>
+			
+			<class name="MavenProject.ValidateTitle" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Validating user logIn">
+		<classes>
+			<class name="MavenProject.HomePage" />
+		</classes>
+	</test>
+	<test thread-count="5" name="App Test">
+		<classes>
+			<class name="MavenProject.AppTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite>  
