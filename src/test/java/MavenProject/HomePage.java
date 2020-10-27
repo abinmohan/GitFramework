@@ -32,7 +32,7 @@ public class HomePage extends base {
 		recoveryPage rp= new recoveryPage(driver);
 		rp.recoveryclick().click();
 		log.info("Test done");
-		
+		System.out.println("Git Test1");
 	}
 	
 	@DataProvider
